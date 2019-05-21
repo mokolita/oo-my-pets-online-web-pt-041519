@@ -46,6 +46,7 @@ class Owner
   end
   
   def walk_dogs 
+<<<<<<< HEAD
    @pets[:dogs].each { |dog| dog.mood = "happy"}
   end 
   
@@ -64,6 +65,27 @@ class Owner
       end
     end 
     @pets.clear
+=======
+    @pets.each do |species, array|
+      if species == :dog 
+        array.each do |dog|
+          dog.mood = "happy"
+        end 
+      end
+    end 
+  end 
+  
+   def play_with_cats 
+    Dog.mood = "happy"
+  end
+  
+  def feed_fish 
+    Dog.mood = "happy"
+  end
+  
+  def sell_pets 
+    Dog.mood = "happy"
+>>>>>>> b7f6198fbefa4dbb23a534d5fe261d8f11d43984
   end
   
   def list_pets
